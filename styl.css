@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Sora:wght@500&display=swap');
+
+html {
+    font-family: 'Sora';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #deffe7;
+    color: black;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 4%;
+    padding: 4%;
+    background: #f8f8e2;
+    border-radius: 8%;
+    box-shadow: 0.5px 0.5px 10px 1px rgb(128, 125, 125);
+    animation: anm1 1.5s ease;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .brand {
+    font-size: 2.2vmax;
+    font-weight: 900;
+}
+
+nav .logo {
+    background-image: url(1.png);
+    height: 6em;
+    width: 5em; 
+    background-size: cover;
+    margin: -8em 0 0 0;
+    transform: rotate(20deg);
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul button {
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    font-size: 0.68rem;
+    border-style: none;
+    outline: none;
+    background-color: rgb(163, 107, 82);
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+}
+
+section .main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 0 0 0;
+}
+
+section .main-content .word {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content p {
+    font-size: 0.9rem;
+    color: rgb(105, 99, 99);
+}
+
+.word h1 {
+    font-size: 4.5vmax;
+}
+
+.word h2 {
+    font-size: 2.5vmax;
+    color: rgb(105, 99, 99);
+    padding: 0 0 0.9em 0;
+}
+
+.word button {
+    width: 50%;
+    font-size: 1em;
+    padding: 1em 1em;
+    margin: 2em 0 0 0;
+    border-radius: 0 1.5em 1.5em 1.2em;
+    background-color:  rgb(163, 107, 82);
+    border-style: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+
+.main-content .place-logo {
+    padding: 4em 0;
+}
+
+.main-content .place-logo .cont-logo {
+    display: flex;
+    padding: 1.5em 0;
+    align-items: center;
+}
+
+.cont-logo .logo-1 {
+    background-image: url(2.png);
+    height: 12vmax;
+    width: 10vmax;
+    background-size: cover;
+    margin-right: 2em;
+}
+
+.cont-logo .logo-2 {
+    background-image: url(4.png);
+    height: 12vmax;
+    width: 12vmax;
+    background-size: cover;
+}
+
+section .large-logo {
+    width: 50%; 
+}
+
+.cont-logo button {
+    height: min-content;
+    padding: 0.2em 0.5em;
+    font-size: 1.5rem;
+    background-color:  rgb(163, 107, 82);
+    border-style: none;
+    outline: none;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: 900;
+}
+
+section .bg {
+    position: absolute;
+    background-image: url(5.png);
+    height: 40vmax;
+    width: 40vmax;
+    background-size: cover;
+    margin: 9em 0 0 5%;
+    opacity: 0.6;
+}
+
+section .main-logo {
+    position: absolute;
+    background-image: url(3.png);
+    padding: 25vmax 25vmax;
+    background-size: cover;
+    margin: 0 0 0 2.5%;
+}
+
+nav button:hover, section button:hover {
+    color: black;
+    background-color: transparent;
+    border: 1px solid rgb(163, 107, 82);
+}
+
+@keyframes anm1 {
+    from {
+        margin: -50em;
+        opacity: 0;
+    }
+
+    to {
+        margin: 0;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1100px) and (min-width:900px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .word h1 {
+        font-size: 4vmax;
+    }
+
+    .word h2 {
+        font-size: 2.2vmax;
+    }
+
+    .word p {
+        font-size: 0.8rem;
+    }
+
+    section .bg {
+        transform: scale(0.9);
+        margin: 5em 0 0 5%;
+    }
+}
+
+@media (max-width: 899px) and (min-width:650px) {
+    nav .logo {
+        height: 5em;
+        width: 4em; 
+    }
+
+    nav ul {
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    .word h1 {
+        font-size: 2.9vmax;
+    }
+
+    .word h2 {
+        font-size: 1.8vmax;
+    }
+
+    .word p {
+        font-size: 0.6rem;
+    }
+
+    .word button {
+        width: 80%;
+    }
+
+    section .bg {
+        transform: scale(0.8);
+        margin: 5em 0 0 1%;
+    }
+    
+    section .main-logo {
+        padding: 25vmax 25vmax;
+        margin: 5% 0 0 0;
+    }
+
+}
+
+@media (max-width: 649px) {
+    .container {
+        border-radius: 2em;
+        margin: 6%;
+        padding: 6%;    
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav .brand {
+        width: 80%;
+    }
+
+    nav ul {
+        width: 100%;
+        font-size: 0.45rem;
+        padding-top: 4%;
+    }
+    
+    nav .logo {
+        font-size: 0.5em;
+        margin: -2em 0 0 0;
+    }
+
+    .word p {
+        font-size: 0.6rem;
+    }
+
+    .word button {
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column-reverse;
+    }
+    .main-content .place-logo .cont-logo {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80vmax;
+    }
+    .cont-logo .logo-1 {
+        transform: scale(2.2);
+    }
+    
+    .cont-logo .logo-2 {
+        transform: scale(2.2);
+    }
+
+    section .large-logo {
+        width: 95%;
+    }
+    
+    section .main-logo {
+        position: static;
+        padding: 22vmax 22vmax;
+        margin: 20% 0 -40% 0; 
+    }
+
+    .large-logo .bg {
+        display: none;
+    }
+}
